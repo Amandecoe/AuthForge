@@ -59,7 +59,7 @@ This project is part of my journey to:
 
 ## 📌 Current Features
 
-- Custom signup form (no `form.as_p`)
+- Custom signup form 
 - Password confirmation validation
 - CSRF-protected forms
 - Clean template rendering
