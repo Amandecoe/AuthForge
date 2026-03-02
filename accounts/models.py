@@ -6,11 +6,10 @@ class CustomUser(AbstractUser):
     is_verified = models.BooleanField(null = False, blank= False)
     is_2FA_enabled = models.BooleanField(blank = True)
     is_active = models.BooleanField()
-    ROLE_CHOICES = (
-        ('admin''Admin'),
-        ('user''User'),
-    )
-    role = models.CharField(max_length=10, choices=ROLE_CHOICES, default='user')
+    class rolechoices(models.TextChoices):
+     ADMIN = 'Admin'
+     USER = 'User'
+    role = models.CharField(max_length=10, choices=rolechoices, default='user')
 
 class email_verification_tokens(models.Model):
     user_id = models.ForeignKey(CustomUser, on_delete=models.CASCADE)

@@ -7,5 +7,4 @@ class CustomUserCreationForm(UserCreationForm):
         fields = (
             'username',
             'email',
-            'age',
         )
