@@ -4,13 +4,20 @@
 <p>Enter your email below to create an account</p>
 <form method = "post">{% csrf_token %}
 <label for = "firstname">First Name</label>
-<input type = "text" id = "firstname" name = "firstname">
+{{form.firstname}}
+{{form.firstname.errors}}
 <label for = "lastname">Last Name</label>
-<input type = "text" id = "lastname" name = "lastname">
+{{form.lastname}}
+{{form.lastname.errors}}
 <label for = "email">Email</label>
-<input type = "email" id = "email" name = "email">
-<label for = "password">Password</label>
-<input type = "password" id = "password" name = "password">
+{{form.email}}
+{{form.email.errors}}
+<label for = "password1">Password</label>
+{{form.password1}}
+{{form.password1.errors}}
+<label for = "password2">Confirm Password</label>
+{{form.password2}}
+{{form.password2.errors}}
 </form>
 </div>
 {% endblock content %}
