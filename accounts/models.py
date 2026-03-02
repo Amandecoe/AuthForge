@@ -14,4 +14,10 @@ class CustomeUser(AbstractUser):
 
 class email_verification_tokens(models.Model):
     user_id = models.ForeignKey(CustomeUser, on_delete=models.CASCADE)
+    token = models.CharField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    expires_at = models.DateTimeField()
+    is_used = models.BooleanField(blank=False)
+
+class password_reset_tokens(models.Model):
     
