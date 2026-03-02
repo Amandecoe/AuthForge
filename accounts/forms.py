@@ -10,7 +10,7 @@ class CustomUserCreationForm(UserCreationForm):
             'username',
             'email',
         )
-
+    #clean() checks if field is unique or not
     def clean_first_name(self):
         first_name = self.cleaned_data.get("first_name")
         if not first_name:
