@@ -11,3 +11,7 @@ class CustomeUser(AbstractUser):
         ('user''User'),
     )
     role = models.CharField(max_length=10, choices=ROLE_CHOICES, default='user')
+
+class email_verification_tokens(models.Model):
+    user_id = models.ForeignKey(CustomeUser, on_delete=models.CASCADE)
+    
