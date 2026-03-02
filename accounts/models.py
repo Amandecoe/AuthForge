@@ -8,6 +8,6 @@ class CustomeUser(AbstractUser):
     is_active = models.BooleanField()
     ROLE_CHOICES = (
         ('admin''Admin'),
-        ()
+        ('user''User'),
     )
-    role = models.
+    role = models.CharField(max_length=10, choices=ROLE_CHOICES, default='user')
