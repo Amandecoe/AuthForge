@@ -5,13 +5,13 @@
 <form method = "post">{% csrf_token %}
     <div class = "innerforms">
 <label for = "firstname">First Name</label>
-{{form.firstname}}
-{{form.firstname.errors}}
+{{form.first_name}}
+{{form.first_name.errors}}
     </div>
     <div class = "innerforms">
 <label for = "lastname">Last Name</label>
-{{form.lastname}}
-{{form.lastname.errors}}
+{{form.last_name}}
+{{form.last_name.errors}}
     </div>
     <div class = "innerforms">
 <label for = "email">Email</label>
