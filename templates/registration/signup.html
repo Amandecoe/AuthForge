@@ -2,8 +2,8 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 {% block content %}
 <div class = "forms">
-<h2>Sign Up</h2>
-<p>Enter your email below to create an account</p>
+<h2 class = "innerforms">Sign Up</h2>
+<p class = "innerforms">Enter your email below to create an account</p>
 <form method = "post">{% csrf_token %}
     <div class = "innerforms">
 <label for = "firstname">First Name</label>
@@ -30,7 +30,7 @@
 {{form.password2}}
 {{form.password2.errors}}
     </div>
-    <button type = "submit">Sign Up</button>
+    <button type = "submit" class = "submit">Sign Up</button>
 </form>
 </div>
 {% endblock content %}
