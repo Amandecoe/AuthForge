@@ -3,9 +3,9 @@ from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 class CustomUser(AbstractUser):
-    is_verified = models.BooleanField(null = False, blank= False)
-    is_2FA_enabled = models.BooleanField(blank = True)
-    is_active = models.BooleanField()
+    is_verified = models.BooleanField(default= False)
+    is_2FA_enabled = models.BooleanField(default = False)
+    is_active = models.BooleanField(default=True)
     class rolechoices(models.TextChoices):
      ADMIN = 'Admin'
      USER = 'User'

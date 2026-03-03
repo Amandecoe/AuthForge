@@ -7,6 +7,14 @@ from django.contrib.auth.admin import UserAdmin
 class CustomUserAdmin(UserAdmin):
     add_form = CustomUserCreationForm
     model = CustomUser
+    list_display = [
+        "username",
+        "first_name",
+        "last_name",
+        "email",
+        "is_active",
+        "is_2FA_enabled",
+    ]
 
 
 admin.site.register(CustomUser,CustomUserAdmin)
