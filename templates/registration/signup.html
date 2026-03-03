@@ -4,7 +4,8 @@
 <div class = "forms">
 <h2 class = "innerforms">Sign Up</h2>
 <p class = "innerforms">Enter your email below to create an account</p>
-<form method = "post">{% csrf_token %}
+<form method = "POST">{% csrf_token %}
+    {{ form.non_field_errors }}
     <div class = "innerforms">
 <label for = "firstname">First Name</label>
 {{form.first_name}}
