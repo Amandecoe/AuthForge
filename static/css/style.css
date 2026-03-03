@@ -2,4 +2,16 @@
     display:flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    justify-items: center;
+    padding:50px;
+    margin: 50px;
+    height:350px;
+    width:400px;
+}
+.innerforms{
+    display: flex;
+    
+    gap:30px;
 }
