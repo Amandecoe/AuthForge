@@ -2,13 +2,16 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from .models import CustomUser
 from django import forms
 class CustomUserCreationForm(UserCreationForm):
-    first_name = forms.CharField(required=False)
-    last_name = forms.CharField(required=False)
+    first_name = forms.CharField(required=True)
+    last_name = forms.CharField(required=True)
     class Meta:
         model = CustomUser
         fields = (
-            'username',
+            'first_name',
+            'last_name',
             'email',
+            'password1',
+            'password2',
         )
     #clean() checks if field is unique or not
     def clean_first_name(self):
