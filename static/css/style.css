@@ -1,11 +1,11 @@
 .forms{
-  display:flex;
-  flex-wrap: wrap;
-  gap:10px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
+    display:flex;
+    flex-wrap: wrap;
+    gap:10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
 }
 .innerforms{
     display: flex;
