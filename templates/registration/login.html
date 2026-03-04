@@ -1,6 +1,7 @@
 {% load static %}
 <link rel="stylesheet" href = "{% static 'css/style.css' %}">
 {% block content %}
+<div class = "wrapper">
 <div class = "forms">
 <h2 class = "innerforms">Sign In</h2>
 <p class = "innerforms">Enter your email below to login to your account</p>
@@ -17,5 +18,6 @@
     </div>
     <button type = "submit" class = "submit">Login</button>
 </form>
+</div>
 </div>
 {% endblock content %}

@@ -14,6 +14,8 @@
     justify-content: center;
     align-items: center;
     border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px rgb(185, 182, 182);
 }
 .innerforms{
     display: flex;
@@ -27,4 +29,9 @@
 .submit{
     height:45px;
     width:100%;
+}
+.already p{
+    text-align: right;
+    margin:10px;
+    font-size:12px;
 }
