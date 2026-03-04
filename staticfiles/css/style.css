@@ -1,5 +1,21 @@
 .forms{
     display:flex;
-    align-items: center;
+    flex-wrap: wrap;
+    gap:10px;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.innerforms{
+    display: flex;
+    margin:10px;
+    gap:20px;
+}
+.names{
+    display: flex;
+    flex-direction: row;
+}
+.submit{
+    height:45px;
+    width:100%;
 }
