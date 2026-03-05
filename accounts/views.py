@@ -7,7 +7,7 @@ from django.contrib.auth.views import LoginView, PasswordChangeView
 # Create your views here.
 class SignUpView(CreateView):
     form_class = CustomUserCreationForm
-    success_url = reverse_lazy("login")
+    success_url = reverse_lazy("home")
     template_name = "registration/signup.html"
 
 class LoginView(LoginView):
