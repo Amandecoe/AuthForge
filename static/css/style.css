@@ -60,6 +60,10 @@ body{
     border: 1px solid var(--accent-color);
     border-radius: 10px;
 }
+.submit:hover{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
 .already p{
     text-align: right;
     margin:20px;
