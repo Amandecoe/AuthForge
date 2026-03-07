@@ -24,8 +24,8 @@ body{
     background-color:var(--base-color);
     color: var(--text-color)
 }
-backgrndimg{
-    background-image: url(./images/Screenshot_2025-12-21_at_7.29.56 PM.png);
+.backgrndimg{
+    background-image: url("../images/background.png");
     height: 100vh;
     width: 100vw;
     position: fixed;
