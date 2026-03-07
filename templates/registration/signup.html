@@ -1,6 +1,7 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 {% block content %}
+<div class = "backgrndimg">
 <div class = "wrapper">
 <div class = "forms">
 <h2 class = "innerforms">Sign Up</h2>
@@ -35,6 +36,7 @@
     <button type = "submit" class = "submit">Sign Up</button>
     <p><a class = "already" href = "{% url 'login'%}">Already has an account?</a></p>
 </form>
+</div>
 </div>
 </div>
 {% endblock content %}
