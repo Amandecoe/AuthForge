@@ -4,7 +4,7 @@ A lightweight authentication system built with Django.
 
 This project is a learning-focused implementation of a customizable authentication system inspired by modern auth solutions. The goal is to deeply understand how authentication works under the hood instead of relying fully on third-party packages.
 
----
+--
 
 ## 🚧 Project Status
 
@@ -59,7 +59,7 @@ This project is part of my journey to:
 
 ## 📌 Current Features
 
-- Custom signup form 
+- Custom signup form
 - Password confirmation validation
 - CSRF-protected forms
 - Clean template rendering
@@ -78,7 +78,7 @@ This project is part of my journey to:
 
 ## ⚠️ Disclaimer
 
-This is a learning and experimental project.  
+This is a learning and experimental project.
 Not production-ready (yet).
 
 ---
