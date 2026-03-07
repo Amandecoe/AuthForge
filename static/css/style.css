@@ -41,7 +41,6 @@ backgrndimg{
 .navbar{
     display:flex;
     list-style: none;
-    padding:40px 60px ;
     margin:0px;
     justify-content: center;
     position:sticky;
@@ -49,12 +48,13 @@ backgrndimg{
     z-index: 1000;
     gap:10px;
     width:100%;
+    max-width: 100%;
     cursor:pointer;
     transition: background-color 0.3s, border-bottom 0.3s;
 }
-nav ul li:first-of-type {
-    margin-right: auto !important;
-}
+/* nav ul li:first-of-type { */
+    /* margin-right: auto !important; */
+/* } */
 .navbar ul li:hover{
     transform: scale(1.4);
     transition-duration:0.5s;
@@ -68,13 +68,14 @@ nav ul li:first-of-type {
     align-items: center;
     gap:40px;
     list-style: none;
+
 }
-.hidden{
-    opacity: 0;
-    transition: all 2s;
-    filter: blur(5px);
-    transform: translateX(-100%)
-}
+/* .hidden{ */
+    /* opacity: 0; */
+    /* transition: all 2s; */
+    /* filter: blur(5px); */
+    /* transform: translateX(-100%) */
+/* } */
 .wrapper{
     display:flex;
     justify-content: center;
