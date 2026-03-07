@@ -85,33 +85,30 @@ body{
 }
 .forms {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Create 2 columns */
-  gap: 20px;
+  grid-template-columns: 1fr 1fr; /* Create 2 columns with 1 fractional unit each*/
+  gap: 20px; /* between each row and column */
   border: 1px solid black;
   padding:30px;
   box-shadow:10px 10px 15px rgba(153, 153, 153, 0.5);
   border-radius:20px;             /* Vertical and horizontal gaps */
 }
-
-/* 2. Force Title, Description, and the Form tag itself to be full-width */
 .forms h2,
 .forms p,
 .forms form {
-  grid-column: 1 / -1;
+  grid-column: 1 / -1; /*makes them take whole width*/
 }
 
-/* 3. Now, create a nested grid inside the Form for the inputs */
+/* Creates a grid for the form(since it is found inside a class forms) with 2 columns */
 .forms form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-/* 4. Keep first 2 inputs side-by-side, force others to stack */
-.forms form .innerforms:nth-of-type(n+3),
+.forms form .innerforms:nth-of-type(n+3), /*ignore the first and second one and apply the following starting from the thrid*/
 .forms form .submit,
 .forms form p {
-  grid-column: 1 / -1;
+  grid-column: 1 / -1;/* This forces the elements to start at Line1 or far left and end at last line or far right, forces it to take full width*/
 }
 .innerforms{
     display: flex;
