@@ -54,7 +54,7 @@ body{
     margin-bottom:16px;
     padding:5px 1em;
     .logo{
-        font-weight: 600;
+        font-weight: 400;
     }
 }
 .small{
@@ -119,4 +119,8 @@ li:first-child{
     position: absolute;
     top: 20px;
     left:0;
+}
+li:last-child{
+    position:absolute;
+    bottom:20px;
 }
