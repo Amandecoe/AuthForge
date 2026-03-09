@@ -19,6 +19,7 @@
             </svg>
             <span class = "logo">{{user.first_name}}</span>
             <span>{{user.email}}</span>
+            <button id = "toggle-btn" onclick = toggleSidebar()>
             <svg width="22px" height="22px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
             <title>arrow-left-circle</title>
             <desc>Created with Sketch Beta.</desc>
@@ -31,6 +32,7 @@
             </g>
             </g>
             </svg>
+            </button>
         </li>
         <li class = "active">
         <a href = "{% url 'dashboard' %}">
