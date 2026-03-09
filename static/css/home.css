@@ -46,10 +46,8 @@ body{
 }
 /* Make the top one on top from the others */
 #top{
-    display:flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    display:grid;
+    grid-template-columns: auto 1fr;
     margin-bottom:16px;
     padding:5px 1em;
     .logo{
@@ -91,11 +89,31 @@ body{
     border-radius: .5em;
     background: none;
     cursor: pointer;
-
     svg{
         transition:rotate 150ms ease;
     }
 }
 #toggle-btn:hover{
    background-color: var(--hover-clr);
+}
+/* #sidebar > ul >li :first-child{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom:16px;
+    .logo{
+        font-weight: 600;
+    }
+} */
+#sidebar ul li.active{
+    color: var(--hover-clr);
+}
+#top-profile{
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr;
+    gap: 10px;
+    padding-left: 8px;
+
+}
+.start{
+    top:0;
 }
