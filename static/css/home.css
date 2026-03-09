@@ -5,7 +5,7 @@
     --secondary-text:#232738;
     --primary-color: #3a435d;
     --accent-color: #0071ff;
-    --hover-color:#b0b3c1;
+    --hover-color:#77787d;
 }
 .darkmode{
     --base-color2: #070b1d;
@@ -45,13 +45,21 @@ body{
     width:60px;
 }
 /* Make the top one on top from the others */
-#sidebar > ul >li:first-child{
+#top{
     display:flex;
-    justify-content: flex-end;
-    margin-bottom: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:16px;
     .logo{
-        font-weight:600;
+        font-weight: 600;
     }
+}
+.small{
+    font-size: 15px;
+}
+#sidebar a{
+    list-style: none;
 }
 #sidebar a, #sidebar, #sidebar.logo{
     border-radius:5em;
@@ -68,4 +76,25 @@ body{
 }
 #sidebar a:hover{
     background-color: var(--hover-clr);
+}
+.rotate svg:last-child{
+    rotate:180deg;
+}
+#sidebar ul{
+    list-style-type: none;
+}
+#toggle-btn{
+    margin-left:auto;
+    padding:1em;
+    border:none;
+    border-radius: .5em;
+    background: none;
+    cursor: pointer;
+
+    svg{
+        transition:rotate 150ms ease;
+    }
+}
+#toggle-btn:hover{
+   background-color: var(--hover-clr);
 }
