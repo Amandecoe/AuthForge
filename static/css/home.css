@@ -18,12 +18,11 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
     font-family: Poppins;
 }
 body{
     min-height:100vh;
-    background-color:var(--base-color);
-    color: var(--text-color);
     display:grid;
     grid-template-columns: auto 1fr;
 }
@@ -137,9 +136,25 @@ li:last-child{
     padding:10px;
 }
 .status{
-    width:400px;
+    width:90%;
+    min-width: 0;
     height:300px;
     border: 1px solid black;
     margin:50px;
     border-radius: 15px;
+}
+.status:hover{
+    background-color: var(--text-color);
+    color:white;
+    transition-duration: 0.3s;
+    transform: scale(1.01);
+    transition-timing-function: ease-in;
+}
+.second-wrapper{
+    display:flex;
+    flex-direction: column;
+}
+.second-wrapper h2{
+    align-items: start;
+    padding:10px;
 }
