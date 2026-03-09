@@ -5,6 +5,7 @@
     --secondary-text:#232738;
     --primary-color: #3a435d;
     --accent-color: #0071ff;
+    --hover-color:#b0b3c1;
 }
 .darkmode{
     --base-color2: #070b1d;
@@ -42,4 +43,29 @@ body{
 #sidebar.close{
     padding:5px;
     width:60px;
+}
+/* Make the top one on top from the others */
+#sidebar > ul >li:first-child{
+    display:flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+    .logo{
+        font-weight:600;
+    }
+}
+#sidebar a, #sidebar, #sidebar.logo{
+    border-radius:5em;
+    padding:.85em;
+    text-decoration: none;
+    color: var(--text-color);
+    display:flex;
+    align-items: center;
+    gap: 1em;
+}
+#sidebar svg{
+    flex-shrink:0;
+    fill: var(--text-color);
+}
+#sidebar a:hover{
+    background-color: var(--hover-clr);
 }
