@@ -3,11 +3,20 @@
 <h1>Active Users</h1>
 <div class = "wrapper">
     <div class="active-users">
-        <p>Username</p>
-        <p>Email</p>
-        <p>status</p>
-        <p>role</p>
-        <p>Changes</p>
+        <table>
+       <tr><th>Username</th>
+            <th>Email</th>
+            <th>status</th>
+            <th>is_active</th>
+            <th>Changes</th>
+        </tr>
+        <p>{{user.username}}</p>
+        <p>{{user.email}}</p>
+        <p>{{user.status}}</p>
+
+        <p>{{user.is_active}}</p>
+
+        </table>
     </div>
 </div>
 {% endblock content %}
