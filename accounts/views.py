@@ -13,6 +13,7 @@ class SignUpView(CreateView):
 class LoginView(LoginView):
     template_name = "registration/login.html"
     authentication_form = CustomLoginView
+    success_url = reverse_lazy("home")
 
 class PasswordChangeView(PasswordChangeView):
     template_name = "registration/password_change_form.html"
