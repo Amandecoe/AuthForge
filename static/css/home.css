@@ -131,10 +131,10 @@ li:last-child{
     /* align-items: center; */
     /* gap:50px; */
 /* } */
-.first-wrapper h2{
-    align-items: start;
-    padding:10px;
-}
+/* .first-wrapper h2{ */
+    /* align-items: start; */
+    /* padding:10px; */
+/* } */
 .status{
     width:90%;
     min-width: 0;
