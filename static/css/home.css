@@ -135,14 +135,14 @@ li:last-child{
     /* align-items: start; */
     /* padding:10px; */
 /* } */
-.status{
-    width:90%;
-    min-width: 0;
-    height:300px;
-    border: 1px solid black;
-    margin:50px;
-    border-radius: 15px;
-}
+/* .status{ */
+    /* width:90%; */
+    /* min-width: 0; */
+    /* height:300px; */
+    /* border: 1px solid black; */
+    /* margin:50px; */
+    /* border-radius: 15px; */
+/* } */
 .status:hover{
     background-color: var(--text-color);
     color:white;
