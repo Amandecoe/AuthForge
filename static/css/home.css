@@ -143,13 +143,13 @@ li:last-child{
     /* margin:50px; */
     /* border-radius: 15px; */
 /* } */
-.status:hover{
-    background-color: var(--text-color);
-    color:white;
-    transition-duration: 0.3s;
-    transform: scale(1.01);
-    transition-timing-function: ease-in;
-}
+/* .status:hover{ */
+    /* background-color: var(--text-color); */
+    /* color:white; */
+    /* transition-duration: 0.3s; */
+    /* transform: scale(1.01); */
+    /* transition-timing-function: ease-in; */
+/* } */
 .second-wrapper{
     display:flex;
     flex-direction: column;
