@@ -125,11 +125,11 @@ li:last-child{
     bottom:20px;
 }
 /* .first-wrapper{ */
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap:50px;
+    /* display:flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* gap:50px; */
 /* } */
 .first-wrapper h2{
     align-items: start;
