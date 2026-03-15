@@ -150,10 +150,10 @@ li:last-child{
     /* transform: scale(1.01); */
     /* transition-timing-function: ease-in; */
 /* } */
-.second-wrapper{
-    display:flex;
-    flex-direction: column;
-}
+/* .second-wrapper{ */
+    /* display:flex; */
+    /* flex-direction: column; */
+/* } */
 /* .second-wrapper h2{ */
     /* align-items: start; */
     /* padding:10px; */
