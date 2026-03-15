@@ -124,13 +124,13 @@ li:last-child{
     position:absolute;
     bottom:20px;
 }
-.first-wrapper{
+/* .first-wrapper{ */
     display:flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap:50px;
-}
+/* } */
 .first-wrapper h2{
     align-items: start;
     padding:10px;
