@@ -154,10 +154,10 @@ li:last-child{
     display:flex;
     flex-direction: column;
 }
-.second-wrapper h2{
-    align-items: start;
-    padding:10px;
-}
+/* .second-wrapper h2{ */
+    /* align-items: start; */
+    /* padding:10px; */
+/* } */
 /* h1{ */
     /* padding:40px; */
     /* margin:10px; */
