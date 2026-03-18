@@ -13,7 +13,7 @@
     --text-color2:#ffffff;
     --secondary-text2:#a4a5b8;
     --primary-color2: #3a435d;
-    --accent-color2: #0071ff;
+    --accent-color2: #519dfa;
 }
 *{
     margin:0;
@@ -77,7 +77,7 @@ body{
     fill: var(--text-color);
 }
 #sidebar a:hover{
-    background-color: var(--hover-color);
+    background-color: var(--accent-color2);
 }
 .rotate svg:last-child{
     rotate:180deg;
