@@ -77,12 +77,13 @@ body{
     background-color: var(--new-bg);
     border: 1px solid var(--new-bg);
     border-radius: 10px;
+    font-size:18px;
 }
 .submit:hover{
     transform: scale(1.05);
     transition-duration: 0.8s;
     transition: box-shadow 0.8s ease-in-out, background-color 0.8s ease-in-out;
-    box-shadow: 0 0 5px var(--accent-color);
+    box-shadow: 0 0 5px var(--new-bg);
 }
 .already p{
     text-align: right;
