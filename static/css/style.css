@@ -5,6 +5,7 @@
     --secondary-text:#232738;
     --primary-color: #3a435d;
     --accent-color: #0071ff;
+    --new-bg: #FFDD00;
 }
 .darkmode{
     --base-color2: #070b1d;
@@ -23,22 +24,6 @@ body{
     min-height:100vh;
     background-color:var(--base-color);
     color: var(--text-color);
-}
-.backgrndimg{
-    background-image: url("../images/Light to Dark Mode (1).png");
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    margin:0;
-    bottom: 0;
-    z-index: -1;
-    /* opacity: 0.6; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    filter: blur(5px);
 }
 .wrapper{
     display:flex;
@@ -89,8 +74,8 @@ body{
     height:50px;
     width:100%;
     color:white;
-    background-color: var(--text-color);
-    border: 1px solid var(--text-color);
+    background-color: var(--new-bg);
+    border: 1px solid var(--new-bg);
     border-radius: 10px;
 }
 .submit:hover{
