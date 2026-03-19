@@ -53,7 +53,7 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr; /* Create 2 columns with 1 fractional unit each*/
   gap: 20px; /* between each row and column */
-  /* border: 1px solid black; */
+  border: 1px solid black;
   padding:30px;
   /* box-shadow:10px 10px 15px rgba(153, 153, 153, 0.5); */
   border-radius:20px;             /* Vertical and horizontal gaps */
