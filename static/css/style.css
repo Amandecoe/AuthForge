@@ -96,7 +96,7 @@ body{
 }
 .submit:hover{
     transform: scale(1.05);
-    transition-duration: 0.8s;
+    transition-duration: 0.3s;
     transition: box-shadow 0.8s ease-in-out, background-color 0.8s ease-in-out;
     box-shadow: 0 0 5px var(--new-bg);
 }
@@ -104,4 +104,5 @@ body{
     text-align: right;
     margin:20px;
     font-size:12px;
+    padding:20px;
 }
