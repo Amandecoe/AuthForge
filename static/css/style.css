@@ -5,7 +5,7 @@
     --secondary-text:#232738;
     --primary-color: #3a435d;
     --accent-color: #0071ff;
-    --new-bg: #FFDD00;
+    --new-bg: #00FF6A;
 }
 .darkmode{
     --base-color2: #070b1d;
@@ -27,6 +27,17 @@ body{
 }
 .backgrndimg{
     background-image: url(../images/Screenshot\ 2026-03-19\ at\ 8.41.38\ in\ the\ morning.png);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 .wrapper{
     display:flex;
