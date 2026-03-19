@@ -25,6 +25,9 @@ body{
     background-color:var(--base-color);
     color: var(--text-color);
 }
+.backgrndimg{
+    background-image: url(../images/Screenshot\ 2026-03-19\ at\ 8.41.38\ in\ the\ morning.png);
+}
 .wrapper{
     display:flex;
     position: relative;
@@ -34,6 +37,7 @@ body{
     width:100vw;
     z-index:1;
 }
+
 .forms {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Create 2 columns with 1 fractional unit each*/
