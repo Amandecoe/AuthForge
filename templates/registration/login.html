@@ -3,25 +3,6 @@
 {% block content %}
 <div class = "backgrndimg"></div>
 <div class = "wrapper">
-<div class = "forms">
-<h2 class = "innerforms">Sign In</h2>
-<p class = "innerforms">Enter your email below to login to your account</p>
-<form method = "post">{% csrf_token %}
-    <div class = "innerforms">
-<label for = "email">Email</label>
-{{form.username}}
-{{form.username.errors}}
-    </div>
-    <div class = "innerforms">
-<label for = "password">Password</label>
-{{form.password}}
-{{form.password.errors}}
-    </div>
-    <div class = "innerforms">
-    <p><a href = "{% url 'password_reset'%}">Forgot Your Password?</a></p>
-    </div>
-    <button type = "submit" class = "submit">Login</button>
-</form>
-</div>
+
 </div>
 {% endblock content %}
