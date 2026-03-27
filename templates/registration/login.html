@@ -7,9 +7,14 @@
 
 </div>
 <div class = "right-side">
-    <h2>Enter Your Account and </h2>
+    <h2>Enter Your Credentials to Login</h2>
 <form method = "POST">{% csrf_token %}
-<label for = "Fullname"></label>
+<label for = "Email">Email</label>
+{{form.email}}
+{{form.email.errors}}
+<label for = "Password">Password</label>
+{{form.password}}
+{{form.password}}
 </form>
 </div>
 </div>
