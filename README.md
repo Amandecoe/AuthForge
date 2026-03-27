@@ -63,6 +63,7 @@ This project is part of my journey to:
 - Password confirmation validation
 - CSRF-protected forms
 - Clean template rendering
+- Dashboard with apexcharts
 
 ---
 
