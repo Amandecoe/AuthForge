@@ -44,8 +44,9 @@ body{
     grid-template-columns: 1fr 1fr;
 }
 .rightside{
-
+    display:flex;
+    flex-direction: column;
 }
 .leftside{
-    
+
 }
