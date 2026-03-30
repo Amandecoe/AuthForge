@@ -49,4 +49,5 @@ body{
 }
 .leftside{
     display:flex;
+    flex-direction: ;
 }
