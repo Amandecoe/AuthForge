@@ -49,5 +49,5 @@ body{
 }
 .leftside{
     display:flex;
-    flex-direction: ;
+    flex-direction: column;
 }
