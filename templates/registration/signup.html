@@ -1,41 +1,5 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 {% block content %}
-<div class = "backgrndimg"></div>
-<div class = "wrapper">
-<div class = "forms">
-<h2 class = "innerforms">Sign Up</h2>
-<p class = "innerforms">Enter your email below to create an account</p>
-<form method = "POST">{% csrf_token %}
-    {{ form.non_field_errors }}
-    <div class = "innerforms">
-<label for = "firstname">First Name</label>
-{{form.first_name}}
-{{form.first_name.errors}}
-    </div>
-    <div class = "innerforms">
-<label for = "lastname">Last Name</label>
-{{form.last_name}}
-{{form.last_name.errors}}
-    </div>
-    <div class = "innerforms">
-<label for = "email">Email</label>
-{{form.email}}
-{{form.email.errors}}
-    </div>
-    <div class = "innerforms">
-<label for = "password1">Password</label>
-{{form.password1}}
-{{form.password1.errors}}
-    </div>
-    <div class = "innerforms">
-<label for = "password2">Confirm Password</label>
-{{form.password2}}
-{{form.password2.errors}}
-    </div>
-    <button type = "submit" class = "submit">Create Your Account</button>
-    <p><a class = "already" href = "{% url 'login'%}">Already has an account?</a></p>
-</form>
-</div>
-</div>
+
 {% endblock content %}
