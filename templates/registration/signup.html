@@ -11,6 +11,9 @@
 <div class = "right-side">
     <h2>Enter Your Credentials to SignUp</h2>
 <form method = "POST">{% csrf_token %}
+    <label for = "FullName">Full Name</label>
+    {{form.full_name}}
+    {{form.full_name.errors}}
 <label for = "Email">Email</label>
 {{form.email}}
 {{form.email.errors}}
