@@ -20,10 +20,12 @@
 <label for = "Password">Password</label>
 {{form.password1}}
 {{form.password1.errors}}
+<label for = "Password2">Re-Enter Password</label>
+{{form.password2}}
+{{form.password2.errors}}
 </form>
-<button type = "subimt">Login</button>
-<p><a href = "{% url 'password_reset'%}">Forgout Password?</a></p>
-<p><a href = "{% url 'signup' %}">Create New Account</a></p>
+<button type = "subimt">SignUp</button>
+<p><a href = "{% url 'login' %}">Already has an Account</a></p>
 </div>
 </div>
 {% endblock content %}
