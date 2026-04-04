@@ -11,16 +11,18 @@
 <div class = "right-side">
     <p>Enter Your Credentials to Create an Account</p>
 <form method = "POST">{% csrf_token %}
-<label for = "Email">Email</label>
-{{form.email}}
-{{form.email.errors}}
+<label for = "Email">Full Name</label>
+{{form.fullname}}
+{{form.fullname.errors}}
 <label for = "Password">Password</label>
-{{form.password}}
-{{form.password}}
+{{form.password1}}
+{{form.password1.errors}}
+<label for = "Password2">Re-Enter Your Password</label>
+{{form.password2}}
+{{form.password2.errors}}
 </form>
-<button type = "subimt">Login</button>
-<p><a href = "{% url 'password_reset'%}">Forgout Password?</a></p>
-<p><a href = "{% url 'signup' %}">Create New Account</a></p>
+<button type = "subimt">Sign Up</button>
+<p><a href = "{% url 'login'%}">Already Has an Account?</a></p>
 </div>
 </div>
 {% endblock content %}
