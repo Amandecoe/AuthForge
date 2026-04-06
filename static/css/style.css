@@ -9,7 +9,7 @@
     --new-bg: #00FF6A;
 }
 .darkmode{
-    --base-color2: #070b1d;
+    --base-color2: #000000;
     --base-variant2:#101425;
     --text-color2:#ffffff;
     --secondary-text2:#a4a5b8;
@@ -53,4 +53,8 @@ a:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+button{
+    color:var(--base-color2);
+    background-color: var(--text-color2);
 }
