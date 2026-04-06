@@ -51,7 +51,11 @@ a:hover{
     margin:20px;
 }
 .left-side{
-
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
+    background: radial-gradient(#13340d, #000000);
+    border-radius: 20px;
 }
 .title{
     display:flex;
@@ -62,6 +66,19 @@ a:hover{
 .title img{
     width:50px;
     height:60px;
+}
+.bottom-content{
+    display:flex;
+    flex-direction: column;
+    padding:0px;
+    margin-left:20px;
+    position:absolute;
+    bottom:50;
+    left:0;
+    font-size:20px;
+}
+.bottom-content p{
+    font-size:15px;
 }
 button{
     color:#000000;
