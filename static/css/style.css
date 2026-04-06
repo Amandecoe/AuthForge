@@ -50,8 +50,18 @@ a:hover{
     gap:10px;
     margin:20px;
 }
-.left-side.img{
-    height:100px;
+.left-side{
+
+}
+.title{
+    display:flex;
+    flex-direction: row;
+    margin:20px;
+    padding:10px;
+}
+.title img{
+    width:50px;
+    height:60px;
 }
 button{
     color:#000000;
