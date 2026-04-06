@@ -29,17 +29,18 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.rightside{
+.right-side{
     display:flex;
     flex-direction: column;
     padding: 30px;
     align-items: center;
     justify-content: center;
+    height:80vh;
+
 }
-.leftside{
+.left-side{
     display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #168344;
 }
