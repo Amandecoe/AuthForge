@@ -11,14 +11,22 @@
     <div class = "right-side">
         <h2>Enter Your Credentials to Login</h2>
         <form method = "POST">{% csrf_token %}
-            <label for = "Email">Email</label>
-            {{form.email}}
-            {{form.email.errors}}
-            <label for = "Password">Password</label>
-            {{form.password}}
-            {{form.password.errors}}
+
+            <div class = "form-group">
+                <label>Username</label>
+                {{form.username}}
+                {{form.username.errors}}
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                {{form.password}}
+                {{form.password.errors}}
+            </div>
+
+            <button type = "subimt">Login</button>
+
         </form>
-        <button type = "subimt">Login</button>
         <p><a href = "{% url 'password_reset'%}">Forgout Password?</a></p>
         <p><a href = "{% url 'signup' %}">Create New Account</a></p>
     </div>
