@@ -53,17 +53,22 @@ a:hover{
     height:80px;
 } */
 input{
+    display: block;
+    width: 100%;
     background-color: #000000 !important;
-    border: 0.1px solid white !important;
+    border: 0.1px solid rgb(103, 103, 103) !important;
     outline: none;
-    border-radius: 7px;
+    margin-top:10px;
+    margin-bottom: 15px;
+    height:30px;
+    padding:10px;
 }
 .left-side{
     display:flex;
     flex-direction: column;
     min-height:100vh;
-    background: radial-gradient(#13340d, #000000);
-    border-radius: 20px;
+    background: radial-gradient(#071e03, #000000);
+    border-radius: 40px;
 }
 .title{
     display:flex;
@@ -92,13 +97,12 @@ button{
     color:#000000;
     background-color: #ffffff;
     width: 250px;
-    height:30px;
+    height:40px;
     text-align: center;
     margin-bottom:20px;
-    border-radius:10px;
+    margin-top:10px;
 }
 button:hover{
-    transform:scale(1.1);
-    transition-duration: 0.5s;
+    background-color:var(--base-variant);
 }
 
