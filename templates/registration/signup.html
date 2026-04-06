@@ -1,28 +1,46 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 {% block content %}
-<div class = "backgrndimg"></div>
+
 <div class = "wrapper">
-<div class="left-side">
-<h2>AuthForge</h2>
-<p>You can Easily</p>
-<h3>Manage users and access with clarity and confidence</h3>
-</div>
+    <div class="left-side">
+        <div class="title">
+        <h1>AuthForge</h1>
+        <img src = "{% static 'images/Screenshot 2026-04-06 at 11.05.05 in the morning.png' %}">
+        </div>
+        <div class="bottom-content">
+        <p>You Can Easily</p><br>
+        <h2>Manage users and access</h2><br>
+        <h2>with clarity and <i>Confidence</i></h2>
+        </div>
+    </div>
 <div class = "right-side">
+    <h2>Sign Up</h2>
     <p>Enter Your Credentials to Create an Account</p>
-<form method = "POST">{% csrf_token %}
-<label for = "Email">Full Name</label>
-{{form.fullname}}
-{{form.fullname.errors}}
-<label for = "Password">Password</label>
-{{form.password1}}
-{{form.password1.errors}}
-<label for = "Password2">Re-Enter Your Password</label>
-{{form.password2}}
-{{form.password2.errors}}
-</form>
-<button type = "subimt">Sign Up</button>
-<p><a href = "{% url 'login'%}">Already Has an Account?</a></p>
+    <form method = "POST">{% csrf_token %}
+
+        <div class = "form-group">
+        <label for = "full_name">Full Name</label>
+        {{form.full_name}}
+        {{form.full_name.errors}}
+        </div>
+
+        <div class = "form-group">
+        <label for = "Password">Password</label>
+        {{form.password1}}
+        {{form.password1.errors}}
+        </div>
+
+        <div class = "form-group">
+        <label for = "Password2">Re-Enter Your Password</label>
+        {{form.password2}}
+        {{form.password2.errors}}
+        </div>
+    </form>
+
+    <button type = "subimt"><b>Sign Up</b></button>
+    <p><a href = "{% url 'login'%}">Already Has an Account?</a></p>
+
 </div>
 </div>
 {% endblock content %}
