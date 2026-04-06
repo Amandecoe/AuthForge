@@ -45,16 +45,16 @@ a:hover{
     height:90vh;
     gap:15px;
 }
-.form-group{
+/* .form-group{
     display: flex;
     flex-direction: column;
     gap:10px;
     margin:20px;
     height:80px;
-}
+} */
 input{
-    /* background-color: #000000 !important; */
-    /* border: 0.1px solid white !important; */
+    background-color: #000000 !important;
+    border: 0.1px solid white !important;
     outline: none;
     border-radius: 7px;
 }
