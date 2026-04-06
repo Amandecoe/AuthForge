@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root{
     --base-color: white;
     --base-variant:#e8e9ed;
@@ -18,12 +19,13 @@
 *{
     margin:0;
     padding:0;
-    font-family: Poppins;
+
 }
 body{
     min-height:100vh;
-    background-color:var(--base-color);
-    color: var(--text-color);
+    background-color:var(--base-color2);
+    color: var(--text-color2);
+    font-family: 'Space Mono', Poppinns;
 }
 .wrapper{
     display: grid;
