@@ -22,7 +22,7 @@
 }
 body{
     min-height:100vh;
-    background-color:#070b1d;
+    background-color:#000000;
     color: #ffffff;
     font-family: 'Space Mono', Poppinns;
 }
@@ -42,19 +42,22 @@ a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:80vh;
+    height:90vh;
 }
 .form-group{
     display: flex;
     flex-direction: column;
+    gap:10px;
+    margin:20px;
 }
-.left-side{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.left-side.img{
+    height:100px;
 }
 button{
-    color:var(--base-color2);
-    background-color: var(--text-color2);
+    color:#000000;
+    background-color: #ffffff;
+    width: 200px;
+    height:30px;
+    text-align: center;
+    margin-bottom:20px;
 }
