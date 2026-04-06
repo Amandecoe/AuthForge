@@ -19,13 +19,19 @@
 *{
     margin:0;
     padding:0;
-
 }
 body{
     min-height:100vh;
-    background-color:var(--base-color2);
-    color: var(--text-color2);
+    background-color:#070b1d;
+    color: #ffffff;
     font-family: 'Space Mono', Poppinns;
+}
+a{
+    text-decoration: none;
+    color:#ffffff;
+}
+a:hover{
+    color:var(--new-bg);
 }
 .wrapper{
     display: grid;
