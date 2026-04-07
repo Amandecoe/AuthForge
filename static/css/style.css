@@ -63,8 +63,9 @@ input{
     height:30px;
     padding:10px;
 }
+
 input, select, textarea{
-    color: #2cc112;
+    color: rgba(1, 203, 1, 0);
 }
 
 .left-side{
