@@ -9,7 +9,7 @@
     --hover-color:#c1c1c6;
 }
 .darkmode{
-    --base-color2: #070b1d;
+    --base-color2: #000000;
     --base-variant2:#101425;
     --text-color2:#ffffff;
     --secondary-text2:#a4a5b8;
@@ -26,4 +26,7 @@ body{
     min-height:100vh;
     display:grid;
     grid-template-columns: auto 1fr;
+    background-color:#000000;
+    color:#ffffff;
+
 }
