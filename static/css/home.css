@@ -1,20 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root{
-    --base-color: white;
+    --base-color: #000000;
     --base-variant:#e8e9ed;
-    --text-color:#111528;
+    --text-color:#ffffff;
     --secondary-text:#232738;
     --primary-color: #3a435d;
     --accent-color: #0071ff;
     --hover-color:#c1c1c6;
-}
-.darkmode{
-    --base-color2: #000000;
-    --base-variant2:#101425;
-    --text-color2:#ffffff;
-    --secondary-text2:#a4a5b8;
-    --primary-color2: #3a435d;
-    --accent-color2: #519dfa;
 }
 *{
     margin:0;
@@ -23,10 +15,10 @@
     font-family: 'Space Mono', Poppins;
 }
 body{
+    min-height:100dvh;
     min-height:100vh;
     display:grid;
     grid-template-columns: auto 1fr;
-    background-color:#000000;
-    color:#ffffff;
-
+    background-color:var(--base-color);
+    color:var(--text-color);
 }
