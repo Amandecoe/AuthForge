@@ -6,7 +6,7 @@
     --secondary-text:#232738;
     --primary-color: #3a435d;
     --accent-color: #45ff29;
-    --hover-color:#c1c1c6;
+    --hover-color:#18211a;
     --line-color:#42434a;
 }
 *{
@@ -74,4 +74,7 @@ body{
 }
 #sidebar a span, #sidebar .dropdown-btn span{
     flex-grow: 1;
+}
+#sidebar a:hover, #sidebar .dropdown-btn:hover{
+    background-color: var(--hover-color);
 }
