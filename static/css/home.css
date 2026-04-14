@@ -5,7 +5,7 @@
     --text-color:#ffffff;
     --secondary-text:#232738;
     --primary-color: #3a435d;
-    --accent-color: #0071ff;
+    --accent-color: #45ff29;
     --hover-color:#c1c1c6;
     --line-color:#42434a;
 }
@@ -42,4 +42,9 @@ body{
         font-weight: 600;
     }
 }
-#sidebar 
+#sidebar ul li.active a{
+     color:var(--accent-color);
+     svg {
+        fill: var(--accent-color);
+     }
+}
