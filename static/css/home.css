@@ -7,6 +7,7 @@
     --primary-color: #3a435d;
     --accent-color: #0071ff;
     --hover-color:#c1c1c6;
+    --line-color:#42434a;
 }
 *{
     margin:0;
@@ -21,4 +22,12 @@ body{
     grid-template-columns: auto 1fr;
     background-color:var(--base-color);
     color:var(--text-color);
+}
+#sidebar{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 250px;
+    padding:5px 5px;
+    background-color: var(--base-color);
+    border: 1px solid var(--)
 }
