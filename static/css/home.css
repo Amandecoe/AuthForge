@@ -31,3 +31,11 @@ body{
     background-color: var(--base-color);
     border: 1px solid var(--line-color);
 }
+#sidebar ul{
+    list-style: none;
+}
+#sidebar > ul >li:first-child{
+    display: flex;
+    justify-content: flex-end;
+    
+}
