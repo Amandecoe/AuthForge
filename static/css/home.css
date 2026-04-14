@@ -29,5 +29,5 @@ body{
     width: 250px;
     padding:5px 5px;
     background-color: var(--base-color);
-    border: 1px solid var(--)
+    border: 1px solid var(--line-color);
 }
