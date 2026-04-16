@@ -90,3 +90,6 @@ body{
         transition: rotate 150ms ease;
     }
 }
+#toggle-btn:hover{
+    background-color: var(--hover-color);
+}
