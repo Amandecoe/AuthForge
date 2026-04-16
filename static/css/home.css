@@ -78,3 +78,15 @@ body{
 #sidebar a:hover, #sidebar .dropdown-btn:hover{
     background-color: var(--hover-color);
 }
+#toggle-btn{
+    margin-left: auto;
+    padding: 1em;
+    border: none;
+    border-radius: .5em;
+    border: none;
+    background: none;
+    cursor: pointer;
+    svg{
+        transition: rotate 150ms ease;
+    }
+}
