@@ -34,6 +34,8 @@ body{
     top:0;
     align-self: start;
     transition: 300ms ease-in-out;
+    overflow: hidden;
+    text-wrap: nowrap;
 }
 #sidebar.close{
     padding:5px;
@@ -83,6 +85,10 @@ body{
 #sidebar a:hover, #sidebar .dropdown-btn:hover{
     background-color: var(--hover-color);
 }
+#sidebar > ul > li:last-child{
+    top:0;
+    bottom:0;
+}
 #toggle-btn{
     margin-left: auto;
     padding: 1em;
@@ -97,4 +103,7 @@ body{
 }
 #toggle-btn:hover{
     background-color: var(--hover-color);
+}
+.rotate svg:last-child{
+    rotate:180deg;
 }
