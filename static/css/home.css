@@ -109,3 +109,7 @@ body{
 .rotate svg:last-child{
     rotate:180deg;
 }
+#chart{
+    width:500px;
+    height:500px;
+}
