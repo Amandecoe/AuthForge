@@ -111,7 +111,7 @@ body{
     rotate:180deg;
 }
 #chart{
-    width: 550px;
+    width: 600px;
     height:auto;
     background-color: #121215;
     border-radius: 15px;
@@ -137,6 +137,12 @@ body{
     display: flex;
     flex-direction: row;
 }
+#top-section h3{
+    font-weight: 450;
+}
+#top-section span{
+    font-weight: 100;
+}
 #total-users{
     display: flex;
     flex-direction: column;
@@ -152,17 +158,51 @@ body{
 #total-users:hover{
     transform: scale(1.05);
     transition: 0.2s ease-in-out;
-    background-color: var(--text-color);
-    color:var(--base-color);
-    svg{
-        fill:var(--base-color);
-    }
 }
 .middle-section{
     display: flex;
     flex-direction: row;
-    gap:10px;
+    height:auto;
+}
+.middle-section h4{
+    font-weight: 450;
+}
+.middle-section p{
+    font-weight: 100;
 }
 #header{
     padding:30px;
+    font-weight: 100;
+}
+#quick-actions{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background-color: #121215;
+    padding: 10px;
+    align-items: center;
+    height: 450px;
+    width: 300px;
+    margin:20px;
+    border-radius: 15px;
+    padding: 10px;
+}
+#quick-actions h3{
+    font-weight: 450;
+    padding-top: 20px;
+}
+#inside-quick{
+    width: 200px;
+    height:auto;
+    margin:10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    background-color: hsl(210, 4%, 9%);
+    box-shadow: 0 0 0 0.1px #e0e0e0;
+    border-radius: 15px;
+}
+#quick-actions h4{
+    font-weight: 300;
 }
