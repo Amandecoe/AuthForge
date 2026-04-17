@@ -110,6 +110,8 @@ body{
     rotate:180deg;
 }
 #chart{
-    width:500px;
-    height:500px;
+    width:450px;
+    height:auto;
+    background-color: #0d1019;
+    border-radius: 15px;
 }
