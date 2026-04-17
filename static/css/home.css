@@ -43,7 +43,7 @@ body{
 }
 #sidebar.close{
     padding:5px;
-    width:60px;
+    width:50px;
 }
 #sidebar ul{
     list-style: none;
@@ -111,8 +111,8 @@ body{
     rotate:180deg;
 }
 #chart{
-    width: 600px;
-    height:300px;
+    width: 550px;
+    height:auto;
     background-color: #121215;
     border-radius: 15px;
     display: flex;
@@ -123,11 +123,12 @@ body{
 }
 #pie{
     width :350px;
-    height: 300px;
+    height: auto;
     margin:30px;
     display:flex;
     flex-direction: column;
     gap:10px;
+    padding:20px;
     margin-left:30px;
     background-color: #121215;
     border-radius: 15px;
@@ -147,6 +148,15 @@ body{
     justify-content: center;
     padding:20px;
     border-radius: 15px;
+}
+#total-users:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+    background-color: var(--text-color);
+    color:var(--base-color);
+    svg{
+        fill:var(--base-color);
+    }
 }
 .middle-section{
     display: flex;
