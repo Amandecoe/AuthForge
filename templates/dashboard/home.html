@@ -82,7 +82,17 @@
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 
 chart.render();
+var option = {
+    chart: {
+        type: "donut",
+    },
+    series: [44, 55, 13, 33],
+    labels: ['Apple', 'Mango', 'Orange', 'Watermelon']
+};
+var pie = new ApexCharts(document.querySelector("#pie"),option);
+pie.render();
 </script>
+
 
 {%endblock content%}
 

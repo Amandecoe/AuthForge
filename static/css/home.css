@@ -115,3 +115,7 @@ body{
     background-color: #0d1019;
     border-radius: 15px;
 }
+#pie{
+    width :450px;
+    height: 100px;
+}
