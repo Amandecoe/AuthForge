@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root{
     --base-color: #000000;
@@ -13,7 +15,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Space Mono', Poppins;
+    font-family: "Montserrat", "Inter", 'Space Mono', Poppins;
 }
 body{
     min-height:100dvh;
@@ -25,7 +27,7 @@ body{
 }
 #sidebar{
     box-sizing: border-box;
-    height: 100vh;
+    height: 100%;
     width: 250px;
     padding:5px 5px;
     background-color: var(--base-color);
@@ -36,6 +38,7 @@ body{
     transition: 300ms ease-in-out;
     overflow: hidden;
     text-wrap: nowrap;
+    border-radius:15px;
 }
 #sidebar.close{
     padding:5px;
@@ -85,9 +88,8 @@ body{
 #sidebar a:hover, #sidebar .dropdown-btn:hover{
     background-color: var(--hover-color);
 }
-#sidebar > ul > li:last-child{
-    top:0;
-    bottom:0;
+#sidebar  ul  li:last-child{
+    align-self: end;
 }
 #toggle-btn{
     margin-left: auto;
