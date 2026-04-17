@@ -5,8 +5,18 @@
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script>var options = {
     chart: {
-    height: 280,
-    type: "area"
+    type: "area",
+    toolbar : {
+        tools:{
+            download: false,
+            selection: false,
+            zoom: false,
+            zoomin: false,
+            zoomout: false,
+            pan: false,
+            reset: false
+        }
+    }
     },
     dataLabels: {
     enabled: false
@@ -14,16 +24,17 @@
     series: [
     {
     name: "Series 1",
-    data: [45, 52, 38, 45, 19, 23, 2]
+    data: [45, 52, 38, 45, 19, 23, 2],
     }
     ],
     fill: {
     type: "gradient",
     gradient: {
         shadeIntensity: 1,
-        opacityFrom: 0.7,
-        opacityTo: 0.9,
-        stops: [0, 90, 100]
+        opacityFrom: 0.9,
+        opacityTo: 0.6,
+        stops: [0, 90, 100],
+        gradientToColors: ['#105506'],
         }
     },
     xaxis: {
@@ -35,7 +46,12 @@
         "05 Jan",
         "06 Jan",
         "07 Jan"
-        ]
+        ],
+    },
+    colors:
+        ['#45ff29'],
+    grid : {
+        show:false,
     }
 };
 
@@ -43,4 +59,6 @@ var chart = new ApexCharts(document.querySelector("#chart"), options);
 
 chart.render();
 </script>
+
 {%endblock content%}
+
