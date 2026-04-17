@@ -39,6 +39,7 @@ body{
     overflow: hidden;
     text-wrap: nowrap;
     border-radius:15px;
+    font-size: 13px;
 }
 #sidebar.close{
     padding:5px;
@@ -110,12 +111,48 @@ body{
     rotate:180deg;
 }
 #chart{
-    width:450px;
-    height:auto;
-    background-color: #101710;
+    width: 600px;
+    height:300px;
+    background-color: #121215;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin:30px;
     border-radius: 15px;
 }
 #pie{
     width :350px;
-    height: 80px;
+    height: 300px;
+    margin:30px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    margin-left:30px;
+    background-color: #121215;
+    border-radius: 15px;
+}
+#top-section{
+    display: flex;
+    flex-direction: row;
+}
+#total-users{
+    display: flex;
+    flex-direction: column;
+    width:400px;
+    height: 150px;
+    gap:15px;
+    margin-left: 30px;
+    background-color: #121215;
+    justify-content: center;
+    padding:20px;
+    border-radius: 15px;
+}
+.middle-section{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+#header{
+    padding:30px;
 }
