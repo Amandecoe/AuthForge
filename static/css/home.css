@@ -112,10 +112,10 @@ body{
 #chart{
     width:450px;
     height:auto;
-    background-color: #0d1019;
+    background-color: #101710;
     border-radius: 15px;
 }
 #pie{
-    width :450px;
-    height: 100px;
+    width :350px;
+    height: 80px;
 }

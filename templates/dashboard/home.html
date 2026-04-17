@@ -24,7 +24,8 @@
     <p>Daily Active Users & Sessions</p>
 </div>
 <div id = "pie">
-
+    <h4>Roles Breakdown</h4>
+    <p>144 total Users</p>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script>var options = {
@@ -42,17 +43,9 @@
         }
     }
     },
-    dataLabels: {
-    enabled: false
-    },
-    series: [
-    {
-    name: "Series 1",
-    data: [45, 52, 38, 45, 19, 23, 2],
-    }
-    ],
-    fill: {
-    type: "gradient",
+    dataLabels: {enabled: false},
+    series: [{name: "Series 1",data: [45, 52, 38, 45, 19, 23, 2], }],
+    fill: {type: "gradient",
     gradient: {
         shadeIntensity: 1,
         opacityFrom: 0.9,
@@ -86,8 +79,10 @@ var option = {
     chart: {
         type: "donut",
     },
-    series: [44, 55, 13, 33],
-    labels: ['Apple', 'Mango', 'Orange', 'Watermelon']
+    series: [20, 50,30],
+    labels: ['Admin', 'Manager', 'User'],
+    colors: ['#651FFF','#00B0FF','#00D492'],
+    stroke: {show: false}
 };
 var pie = new ApexCharts(document.querySelector("#pie"),option);
 pie.render();
