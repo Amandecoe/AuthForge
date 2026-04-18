@@ -18,7 +18,7 @@
     font-family: "Montserrat", "Inter", 'Space Mono', Poppins;
 }
 body{
-    overflow: hidden;
+    /* overflow: hidden; */
     box-sizing: border-box;
     min-height:100dvh;
     min-height:100vh;
@@ -176,4 +176,16 @@ body{
 #header{
     padding:30px;
     font-weight: 100;
+}
+#quick-actions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 500px;
+    gap: 30px;
+    padding: 10px;
+    margin: 30px;
+    height: 300px;
+}
+#inside-quick{
+    
 }
