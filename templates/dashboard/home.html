@@ -139,10 +139,13 @@ var option = {
             },
     plotOptions: {
     pie: {
-        customScale: 0.8
+        customScale: 0.85
     }
 }
         },
+        height: 150,
+        width: '100%',
+        toolbar: {show:false},
 };
 var pie = new ApexCharts(document.querySelector("#pie"),option);
 pie.render();
