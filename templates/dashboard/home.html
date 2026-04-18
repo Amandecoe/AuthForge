@@ -81,9 +81,13 @@
             zoomin: false,
             zoomout: false,
             pan: false,
-            reset: false
+            reset: false,
+            show: false,
         }
-    }
+    },
+    height: 380,
+    width: '100%',
+
     },
     dataLabels: {enabled: false},
     series: [{name: "Series 1",data: [45, 52, 38, 45, 19, 23, 2], },{name: "Series 2", data: [50, 59, 43, 49, 24, 27, 5]}],
@@ -133,8 +137,12 @@ var option = {
                 horizontal: 10,
                 vertical: 5,
             },
-            width: 200,
-    },
+    plotOptions: {
+    pie: {
+        customScale: 0.8
+    }
+}
+        },
 };
 var pie = new ApexCharts(document.querySelector("#pie"),option);
 pie.render();
