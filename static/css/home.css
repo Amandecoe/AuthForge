@@ -113,7 +113,7 @@ body{
     rotate:180deg;
 }
 #chart{
-    width: 800px;
+    width: 60%;
     height:auto;
     background-color: #121215;
     border-radius: 15px;
@@ -138,6 +138,7 @@ body{
 #top-section{
     display: flex;
     flex-direction: row;
+    max-width: 100%;
 }
 #top-section h3{
     font-weight: 450;
@@ -165,7 +166,7 @@ body{
     display: flex;
     flex-direction: row;
     height:auto;
-    width: 100%;
+    max-width: 100%;
 }
 .middle-section h4{
     font-weight: 450;
@@ -180,12 +181,18 @@ body{
 #quick-actions{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 500px;
+    width: 50%;
     gap: 30px;
     padding: 10px;
     margin: 30px;
     height: 300px;
+
 }
 #inside-quick{
-    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #121215;
+    border-radius: 15px;
 }
