@@ -140,6 +140,11 @@ body{
     display: flex;
     flex-direction: row;
     max-width: 100%;
+    svg{
+        border: 0.5px solid rgb(135, 132, 132);
+        border-radius: 5px;
+        padding: 2px;
+    }
 }
 #top-section h3{
     font-weight: 450;
