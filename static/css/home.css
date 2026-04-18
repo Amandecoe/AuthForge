@@ -111,7 +111,7 @@ body{
     rotate:180deg;
 }
 #chart{
-    width: 600px;
+    width: 800px;
     height:auto;
     background-color: #121215;
     border-radius: 15px;
@@ -122,7 +122,7 @@ body{
     border-radius: 15px;
 }
 #pie{
-    width :350px;
+    width :450px;
     height: auto;
     margin:30px;
     display:flex;
