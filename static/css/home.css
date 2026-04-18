@@ -183,9 +183,10 @@ body{
     align-items: center;
     height: 450px;
     width: 300px;
-    margin:20px;
+    margin-left:20px;
     border-radius: 15px;
     padding: 10px;
+    margin-top: 30px;
 }
 #quick-actions h3{
     font-weight: 450;
@@ -193,12 +194,11 @@ body{
 }
 #inside-quick{
     width: 200px;
-    height:auto;
+    height:450px;
     margin:10px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap:15px;
     background-color: hsl(210, 4%, 9%);
     box-shadow: 0 0 0 0.1px #e0e0e0;
     border-radius: 15px;
