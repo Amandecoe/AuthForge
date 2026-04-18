@@ -18,6 +18,8 @@
     font-family: "Montserrat", "Inter", 'Space Mono', Poppins;
 }
 body{
+    overflow: hidden;
+    box-sizing: border-box;
     min-height:100dvh;
     min-height:100vh;
     display:grid;
