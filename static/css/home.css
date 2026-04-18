@@ -163,6 +163,7 @@ body{
     display: flex;
     flex-direction: row;
     height:auto;
+    width: 100%;
 }
 .middle-section h4{
     font-weight: 450;
