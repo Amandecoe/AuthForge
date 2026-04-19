@@ -129,7 +129,6 @@ var option = {
     labels: ['Admin', 'Manager', 'User'],
     colors: ['#651FFF','#00B0FF','#00D492'],
     stroke: {show: false},
-    plotOptions: {pie:{size:100}},
     legend: {position: 'right',
             horizontalAlign: 'left',
             floating: false,
@@ -139,13 +138,19 @@ var option = {
             },
     plotOptions: {
     pie: {
-        customScale: 0.8
+        customScale: 0.7,
     }
 }
         },
         height: 100,
-        width: '80%',
+        width: '100%',
         toolbar: {show:false},
+        grid: {
+    padding: {
+        top: 0,
+        bottom: 0
+    }
+}
 };
 var pie = new ApexCharts(document.querySelector("#pie"),option);
 pie.render();
