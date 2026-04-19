@@ -114,7 +114,7 @@ body{
 }
 #chart{
     width: 60%;
-    height:150px;
+    height:100px;
     background-color: #121215;
     border-radius: 15px;
     display: flex;
