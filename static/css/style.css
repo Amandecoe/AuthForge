@@ -73,7 +73,7 @@ input, select, textarea{
     display:flex;
     flex-direction: column;
     min-height:100vh;
-    background: radial-gradient(#0e4804, #000000);
+    background: radial-gradient(#0a3103, #000000);
     border-radius: 40px;
 }
 .title{
