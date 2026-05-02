@@ -125,9 +125,9 @@ body{
     margin-bottom: 50px;
 }
 #pie{
-    width: 20%;
-    height:100px;
-    max-height: 100px !important;
+    width: 40%;
+    height:200px;
+    max-height: 200px;
     margin:30px;
     display:flex;
     flex-direction: column;
