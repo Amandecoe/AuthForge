@@ -209,4 +209,5 @@ body{
     background-color: #1a1a1b;
     border-radius: 15px;
     cursor: pointer;
+    flex-wrap: wrap;
 }
