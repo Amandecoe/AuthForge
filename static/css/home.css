@@ -221,3 +221,9 @@ body{
     flex-direction: column;
     gap:20px;
 }
+.activity-item{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    padding:6px 0;
+}

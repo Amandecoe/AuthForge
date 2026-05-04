@@ -32,7 +32,7 @@ class DashboardView(LoginRequiredMixin,ListView):
 
 #an api for endpoint for the activites by users
 def recent_activity_api(request):
-    activites = Activity.object.order_by('-timestamp')
+    activites = Activity.objects.order_by('-timestamp')
     data = []
     for activity in activites:
         data.append({
