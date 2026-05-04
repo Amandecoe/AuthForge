@@ -5,6 +5,7 @@ from .forms import CustomUserCreationForm, CustomLoginView
 from .models import CustomUser, Activity
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView, PasswordChangeView
+from django.http import JsonResponse
 # Create your views here.
 class SignUpView(CreateView):
     form_class = CustomUserCreationForm
@@ -28,3 +29,15 @@ class DashboardView(LoginRequiredMixin,ListView):
 
     def get_queryset(self):
         return Activity.objects.order_by('-timestamp')[:10]
+
+#an api for endpoint for the activites by users
+def recent_activity_api(request):
+    activites = Activity.object.order_by('-timestamp')
+    data = []
+    for activity in activites:
+        data.append({
+            "action":activity.action,
+            "user": str(activity.user) if activity.user else "Unknown",
+            "time": activity.timestamp.strftime("%H:%M:%S"),
+        })
+        return JsonResponse({"activities": data})
