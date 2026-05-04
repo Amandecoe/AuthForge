@@ -187,11 +187,29 @@ body{
 }
 .actions-container{
     background-color: #121215;
-    width:50%;
+    width:45%;
+    padding: 20px;
+    margin:30px;
+    border-radius: 15px;
+}
+.actions-container h3{
+    padding:10px;
+    margin-bottom: 10px;
+    font-weight: 300;
 }
 .quick-actions-cards{
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap:16px;
+    gap:20px;
+    font-weight: 200;
+}
+.inside-cards{
+    gap:50px;
+    background-color: #17181c;
+    width:290px;
+    height:120px;
+    padding:30px;
+    border-radius: 15px;
+    cursor: pointer;
 }
