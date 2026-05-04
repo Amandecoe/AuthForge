@@ -161,6 +161,7 @@ pie.render();
 
 <script>
     function getIcon(action){
+        action = action.toLowerCase().trim();
         if(action == "login") return "🔐";
         if(action === "signup") return "🆕";
         if(action === "login_failed") return "❌";
@@ -177,30 +178,15 @@ pie.render();
             return res.json();
         })
         .then(data => {
-
-            console.log("API DATA:", data);
-
-            // IMPORTANT: matches your HTML ID exactly
             const container = document.getElementById("Recent-Activity");
-
-            if (!container) {
-                console.error("❌ Recent-Activity container not found in HTML");
-                return;
-            }
-
             container.innerHTML = "";
-
-            if (!data || !data.activities) return;
-
             data.activities.forEach(activity => {
-
                 let item = document.createElement("div");
                 item.classList.add("activity-item");
 
                 item.innerHTML = `
-                    <span>${activity.user}</span>
-                    <span> - ${activity.action}</span>
-                    <span> (${activity.time})</span>
+                <span>${getIcon(activity.action)}</span>
+                <span>${activity.user} - ${activity.action} (${activity.time})</span>
                 `;
 
                 container.appendChild(item);

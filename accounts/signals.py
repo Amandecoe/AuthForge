@@ -1,6 +1,9 @@
 from django.contrib.auth.signals import user_logged_in, user_logged_out, user_login_failed
 from django.dispatch import receiver
 from .models import Activity
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 @receiver(user_logged_in)
 def log_login(sender, request, user, **kwargs):
@@ -18,8 +21,9 @@ def log_logout(sender, request, user, **kwargs):
     )
 
 @receiver(user_login_failed)
-def log_failed(sender, request, user, **kwargs):
+def log_failed(sender, request, credentials, **kwargs):
     Activity.objects.create(
         action="login_failed",
         ip_address=request.META.get("REMOTE_ADDR")
     )
+    print(credentials)

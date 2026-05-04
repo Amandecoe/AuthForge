@@ -129,5 +129,5 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
 AUTH_USER_MODEL = "accounts.CustomUser"
-LOGIN_REDIRECT_URL = "signup" #to be changed
+LOGIN_REDIRECT_URL = "home" 
 STATIC_ROOT = BASE_DIR / "staticfiles"

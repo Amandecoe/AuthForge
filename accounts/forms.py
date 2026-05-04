@@ -6,8 +6,8 @@ class CustomUserCreationForm(UserCreationForm):
     email = forms.EmailField(label = "email")
     class Meta:
         model = CustomUser
-        fields = ("email", "full_name", "password1", "password2")
+        fields = ("username","email", "full_name", "password1", "password2")
 class CustomLoginView(AuthenticationForm):
-    username = forms.EmailField(label = "Email", widget = forms.EmailInput(attrs = {
+    username = forms.CharField(label = "Email", widget = forms.EmailInput(attrs = {
         "placeholder":"Enter Your Email"
     }))
