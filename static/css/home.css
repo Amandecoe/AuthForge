@@ -191,6 +191,7 @@ body{
     padding: 20px;
     margin:30px;
     border-radius: 15px;
+    padding-bottom:40px;
 }
 .actions-container h3{
     padding:10px;
@@ -202,14 +203,21 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     gap:20px;
-    font-weight: 200;
+    font-weight: 150;
 }
 .inside-cards{
-    gap:50px;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
     background-color: #17181c;
     width:290px;
-    height:120px;
+    height:130px;
     padding:30px;
     border-radius: 15px;
     cursor: pointer;
+}
+.inside-cards a{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
 }
