@@ -11,7 +11,7 @@ class SignUpView(CreateView):
     form_class = CustomUserCreationForm
     success_url = reverse_lazy("home")
     template_name = "registration/signup.html"
-    
+
 
 class LoginView(LoginView):
     template_name = "registration/login.html"
@@ -23,22 +23,17 @@ class PasswordChangeView(PasswordChangeView):
     success_url = reverse_lazy("password_change_done")
 
 #dashboard viewer
-class DashboardView(LoginRequiredMixin,ListView):
-    model = Activity
-    template_name = "dashboard/home.html"
-    context_object_name = "activites"
+from django.http import JsonResponse
 
-    def get_queryset(self):
-        return Activity.objects.order_by('-timestamp')[:10]
-
-#an api for endpoint for the activites by users
 def recent_activity_api(request):
-    activites = Activity.objects.order_by('-timestamp')
+    activities = Activity.objects.order_by('-timestamp')
+
     data = []
-    for activity in activites:
+    for activity in activities:
         data.append({
-            "action":activity.action,
+            "action": activity.action,
             "user": str(activity.user) if activity.user else "Unknown",
             "time": activity.timestamp.strftime("%H:%M:%S"),
         })
-        return JsonResponse({"activities": data})
+
+    return JsonResponse({"activities": data})
