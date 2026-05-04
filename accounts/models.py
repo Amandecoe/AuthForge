@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-
+from django.conf import settings
 # Create your models here.
 class CustomUser(AbstractUser):
     email = models.EmailField(unique=True)
@@ -40,3 +40,15 @@ class password_reset_tokens(models.Model):
 #stores user activites in the system
 class Activity(models.Model):
     ACTION_CHOICES =[]
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True
+    )
+    action = models.CharField(max_length=50, choices=ACTION_CHOICES)
+    timestamp = models.DateTimeField(auto_now_add=True)
+    ip_address=models.GenericIPAddressField(null=True, blank=True)
+
+    def __str__(self):
+        return f"{self.user} - {self.action}"
