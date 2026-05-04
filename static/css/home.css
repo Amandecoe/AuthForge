@@ -185,4 +185,13 @@ body{
     padding:30px;
     font-weight: 100;
 }
-
+.actions-container{
+    background-color: #121215;
+    width:50%;
+}
+.quick-actions-cards{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:16px;
+}
