@@ -10,4 +10,16 @@ def log_login(sender, request, user, **kwargs):
         ip_address = request.META.get("REMOTE_ADDR")
     )
 
+@receiver(user_logged_out)
+def log_logout(sender, request, user, **kwargs):
+    Activity.objects.create(
+        user = user,
+        action = "logout"
+    )
 
+@receiver(user_login_failed)
+def log_failed(sender, request, user, kwargs):
+    Activity.objects.create(
+        action="login_failed",
+        ip_address=request.META.get("REMOTE_ADDR")
+    )
