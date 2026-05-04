@@ -39,7 +39,13 @@ class password_reset_tokens(models.Model):
 
 #stores user activites in the system
 class Activity(models.Model):
-    ACTION_CHOICES =[]
+    ACTION_CHOICES =[
+        ("login", "Login"),
+        ("logout", "Logout"),
+        ("signup", "Signup"),
+        ("password_change", "Password Change"),
+        ("login_failed", "Login Failed"),
+    ]
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
