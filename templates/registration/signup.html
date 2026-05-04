@@ -24,6 +24,12 @@
         {{form.full_name}}
         {{form.full_name.errors}}
         </div>
+        
+        <div class="form-group">
+        <label>Email</label>
+        {{ form.email }}
+        {{ form.email.errors }}
+        </div>
 
         <div class = "form-group">
         <label for = "Password">Password</label>
@@ -36,9 +42,10 @@
         {{form.password2}}
         {{form.password2.errors}}
         </div>
+        <button type = "submit"><b>Sign Up</b></button>
     </form>
 
-    <button type = "subimt"><b>Sign Up</b></button>
+
     <p><a href = "{% url 'login'%}">Already Has an Account?</a></p>
 
 </div>

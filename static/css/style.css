@@ -66,7 +66,7 @@ input{
 }
 
 input, select, textarea{
-    color: rgba(1, 203, 1, 0);
+    color: rgb(235, 239, 235);;
 }
 
 .left-side{
