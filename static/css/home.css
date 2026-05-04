@@ -185,32 +185,4 @@ body{
     padding:30px;
     font-weight: 100;
 }
-#quick-actions{
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    gap: 30px;
-    padding: 30px;
-    margin: 30px;
-    height: 300px;
-    border-radius: 15px;
-    background-color: #121215;
 
-}
-#quick-actions h4{
-    font-weight: 200;
-    flex: 0 0 100%; /* Prevents growing/shrinking, forces full width */
-    order: -1;      /* Guarantees it stays at the top/first */
-    margin-bottom: 8px;
-}
-#inside-quick{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    height: 100px;
-    background-color: #1a1a1b;
-    border-radius: 15px;
-    cursor: pointer;
-    flex-wrap: wrap;
-}
