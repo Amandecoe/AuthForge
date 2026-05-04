@@ -36,12 +36,11 @@
 
 </div>
 
-<div class="bottom-section">
-    <div id = "Recent-Activity">
-    <div class="activity">
+<div id = "Recent-Activity">
 
     </div>
-    </div>
+<div class="bottom-section">
+
     <div class = "actions-container">
     <h3>Quick Actions</h3>
     <div class = "quick-actions-cards">
@@ -168,28 +167,53 @@ pie.render();
         if(action === "password_change") return "⚙️";
         return "📌";
     }
-    function loadActivites(){
-        fetch("/api/activity/")
-        .then(response => response.json())
-        .then (data => {
-            let container = document.getElementById("activity");
+    function loadActivities() {
+
+    fetch("/accounts/api/activity/")
+        .then(res => {
+            if (!res.ok) {
+                throw new Error("HTTP error: " + res.status);
+            }
+            return res.json();
+        })
+        .then(data => {
+
+            console.log("API DATA:", data);
+
+            // IMPORTANT: matches your HTML ID exactly
+            const container = document.getElementById("Recent-Activity");
+
+            if (!container) {
+                console.error("❌ Recent-Activity container not found in HTML");
+                return;
+            }
+
             container.innerHTML = "";
 
-            data.activites.forEach(activity => {
+            if (!data || !data.activities) return;
+
+            data.activities.forEach(activity => {
+
                 let item = document.createElement("div");
                 item.classList.add("activity-item");
 
                 item.innerHTML = `
-                <span>${getIcon(activity.action)}</span>
-                <span>${activity.user} - ${activity.action} (${activity.time})</span>
-            `;
+                    <span>${activity.user}</span>
+                    <span> - ${activity.action}</span>
+                    <span> (${activity.time})</span>
+                `;
 
-            container/appendChild(item);
-            })
+                container.appendChild(item);
+            });
+
         })
-    }
-loadActivites();
-setInterval(loadActivites, 5000);
+        .catch(err => {
+            console.error("Fetch error:", err);
+        });
+}
+loadActivities();
+setInterval(loadActivities(), 5000);
+
 </script>
 {%endblock content%}
 

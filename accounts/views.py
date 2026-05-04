@@ -23,15 +23,21 @@ class PasswordChangeView(PasswordChangeView):
     success_url = reverse_lazy("password_change_done")
 
 #dashboard viewer
-from django.http import JsonResponse
+class DashboardView(LoginRequiredMixin,ListView):
+    model = Activity
+    template_name = "dashboard/home.html"
+    context_object_name = "activities"
 
+    def get_queryset(self):
+        return Activity.objects.order_by('-timestamp')[:10]
+
+#an api for endpoint for the activites by users
 def recent_activity_api(request):
     activities = Activity.objects.order_by('-timestamp')
-
     data = []
     for activity in activities:
         data.append({
-            "action": activity.action,
+            "action":activity.action,
             "user": str(activity.user) if activity.user else "Unknown",
             "time": activity.timestamp.strftime("%H:%M:%S"),
         })
