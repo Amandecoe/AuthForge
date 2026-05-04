@@ -186,8 +186,8 @@ body{
     font-weight: 100;
 }
 #quick-actions{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     width: 50%;
     gap: 30px;
     padding: 30px;
@@ -199,6 +199,9 @@ body{
 }
 #quick-actions h4{
     font-weight: 200;
+    flex: 0 0 100%; /* Prevents growing/shrinking, forces full width */
+    order: -1;      /* Guarantees it stays at the top/first */
+    margin-bottom: 8px;
 }
 #inside-quick{
     display: flex;
