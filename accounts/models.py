@@ -36,3 +36,7 @@ class password_reset_tokens(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     expires_at = models.DateTimeField()
     is_used = models.BooleanField(blank=False)
+
+#stores user activites in the system
+class Activity(models.Model):
+    ACTION_CHOICES =[]
