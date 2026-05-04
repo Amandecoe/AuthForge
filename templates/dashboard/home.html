@@ -38,7 +38,9 @@
 
 <div class="bottom-section">
     <div id = "Recent-Activity">
+    <div class="activity">
 
+    </div>
     </div>
     <div class = "actions-container">
     <h3>Quick Actions</h3>
@@ -158,6 +160,36 @@ var pie = new ApexCharts(document.querySelector("#pie"),option);
 pie.render();
 </script>
 
+<script>
+    function getIcon(action){
+        if(action == "login") return "🔐";
+        if(action === "signup") return "🆕";
+        if(action === "login_failed") return "❌";
+        if(action === "password_change") return "⚙️";
+        return "📌";
+    }
+    function loadActivites(){
+        fetch("/api/activity/")
+        .then(response => response.json())
+        .then (data => {
+            let container = document.getElementById("activity");
+            container.innerHTML = "";
 
+            data.activites.forEach(activity => {
+                let item = document.createElement("div");
+                item.classList.add("activity-item");
+
+                item.innerHTML = `
+                <span>${getIcon(activity.action)}</span>
+                <span>${activity.user} - ${activity.action} (${activity.time})</span>
+            `;
+
+            container/appendChild(item);
+            })
+        })
+    }
+loadActivites();
+setInterval(loadActivites, 5000);
+</script>
 {%endblock content%}
 
