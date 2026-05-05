@@ -228,8 +228,28 @@ body{
     padding:6px 0;
 }
 #Recent-Activity{
-    
+    display: flex;
+    flex-direction: column;
+    gap:20px;
 }
 .activity-item{
-
+    display: flex;
+    flex-direction: row;
+    background-color: #17181c;
+    gap:10px;
+}
+.activity-item svg{
+    border-radius: 20px;
+}
+#Activity-container{
+    padding:10px;
+    background-color: #121215;
+    width:45%;
+    margin:30px;
+    border-radius: 15px;
+    padding-bottom:40px;
+}
+.bottom-section{
+    display: flex;
+    flex-direction: row;
 }
