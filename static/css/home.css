@@ -236,7 +236,9 @@ body{
     display: flex;
     flex-direction: row;
     background-color: #17181c;
-    gap:10px;
+    gap:20px;
+    padding:20px;
+    border-radius: 15px;
 }
 .activity-item svg{
     border-radius: 20px;
