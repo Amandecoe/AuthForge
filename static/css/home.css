@@ -239,11 +239,11 @@ body{
     gap:25px;
     padding:20px;
     border-radius: 15px;
+    font-weight:300;
 }
 .activity-item svg{
     border-radius: 20px;
     padding:5px;
-    border:0.2px solid #138e00;
 }
 #Activity-container{
     padding:10px;
