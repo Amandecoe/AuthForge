@@ -257,6 +257,10 @@ body{
     font-weight:200;
     padding:15px;
 }
+#Activity-container h4{
+    left:0;
+    top:0;
+}
 .bottom-section{
     display: flex;
     flex-direction: row;
