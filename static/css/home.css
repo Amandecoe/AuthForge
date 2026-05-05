@@ -236,20 +236,26 @@ body{
     display: flex;
     flex-direction: row;
     background-color: #17181c;
-    gap:20px;
+    gap:25px;
     padding:20px;
     border-radius: 15px;
 }
 .activity-item svg{
     border-radius: 20px;
+    padding:5px;
+    border:0.2px solid #22fd00;
 }
 #Activity-container{
     padding:10px;
     background-color: #121215;
     width:45%;
-    margin:30px;
+    margin:20px;
     border-radius: 15px;
     padding-bottom:40px;
+}
+#Activity-container h3{
+    font-weight:200;
+    padding:15px;
 }
 .bottom-section{
     display: flex;
