@@ -257,9 +257,14 @@ body{
     font-weight:200;
     padding:15px;
 }
-#Activity-container h4{
-    left:0;
-    top:0;
+#recent-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#view-all{
+    color:#45ff29;
+    cursor:pointer;
 }
 .bottom-section{
     display: flex;
