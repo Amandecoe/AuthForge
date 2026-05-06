@@ -266,6 +266,9 @@ body{
     color:#45ff29;
     cursor:pointer;
 }
+#recent-header a{
+    text-decoration: none;
+}
 .bottom-section{
     display: flex;
     flex-direction: row;
