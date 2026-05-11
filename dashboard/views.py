@@ -19,3 +19,4 @@ class UserPageView(ListView):
 class ProfilePageView(ListView):
     model = UserProfile
     template_name = "dashboard/profile.html"
+    context_object_name = "profile"
