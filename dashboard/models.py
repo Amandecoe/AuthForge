@@ -7,7 +7,7 @@ class UserProfile(models.Model):
         on_delete=models.CASCADE
     )
     profile_picture = models.ImageField(null=True, blank=True)
-    bio = models.TextField(max_length=200)
-    phone_number = models.PositiveSmallIntegerField(blank=True)
+    bio = models.TextField(max_length=200, default = "User Here")
+    phone_number = models.PositiveSmallIntegerField(blank=True , default = +251)
     last_seen = models.DateTimeField(blank=True, null=True)
-    
+
