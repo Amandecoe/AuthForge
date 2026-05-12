@@ -63,3 +63,21 @@ def account_status(request):
         login_count = Count("id"),
         last_login = Max("timestamp")
     )
+
+    last_login = stats["last_login"]
+    now = timezone.now()
+
+    if last_login is None:
+        status = "Never Logged In"
+    elif now - last_login <= timedelta(days=7):
+        status = "Active"
+    elif now - last_login <= timedelta(days = 30):
+        status = "Inactive"
+    else:
+        status = "Dormant"
+
+    return JsonResponse({
+        "login_count": stats["login_count"],
+        "last_login": stats["last_login"],
+        "status": status
+    })
