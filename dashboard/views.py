@@ -35,6 +35,7 @@ def profile_data(request):
         "Username" : request.user.username,
         "Email": request.user.email,
         "bio": profile.bio,
+        "Profile_Picture":profile.profile_picture,
     }
 
     return JsonResponse(data);
