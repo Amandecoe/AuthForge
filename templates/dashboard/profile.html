@@ -21,7 +21,6 @@
                     <p>Bio:${data.bio}</p>
                 `;
             })
-            .catch(err => console.error("Fetch error:", err));
     }
     loadProfile();
 });
@@ -31,8 +30,22 @@
     <script>
     document.addEventListener("DOMContentLoaded", function(){
         function loadactivity(){
-            fetch()
+            fetch("api/profile_status/")
+            .then(res => res.json())
+            .then(data => {
+                let container = document.getElementById("Account-Stats");
+                container.innerHTML = `
+                <h2>Account Stats</h2>
+                <h4> TOTAL LOGINS </h4>
+                <h3> ${data.login_count}</h3>
+                <h4> LAST LOGIN </h4>
+                <h3> ${data.last_login}</h3>
+                <h4> ACCOUNT STATUS </h4>
+                <h3> ${data.status}</h3>
+                `;
+            })
         }
+        loadactivity();
     })
     </script>
     </div>

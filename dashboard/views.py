@@ -11,7 +11,7 @@ from django.urls import reverse_lazy
 from django.db.models import Count, Max
 from django.utils import timezone
 from datetime import timedelta
-from .models import Activity
+from .models import AccountsActivity
 # Create your views here.
 User = get_user_model()
 class HomePageView(TemplateView):
@@ -54,30 +54,23 @@ class PasswordChangeView(PasswordChangeView):
 
 @login_required
 def account_status(request):
-    activity = Activity.objects.filter(
-        user = request.user,
-        action = "login",
-        )
-
-    stats = activity.aggregate(
-        login_count = Count("id"),
-        last_login = Max("timestamp")
-    )
-
-    last_login = stats["last_login"]
+    last_login = AccountsActivity.objects.filter(user=request.user).aggregate(
+    Max("timestamp")
+    )["timestamp__max"]
+    login_count = AccountsActivity.objects.filter(user=request.user).count()
     now = timezone.now()
 
     if last_login is None:
         status = "Never Logged In"
     elif now - last_login <= timedelta(days=7):
-        status = "Active"
+        status = "🟢 Active"
     elif now - last_login <= timedelta(days = 30):
-        status = "Inactive"
+        status = "🔴 Inactive"
     else:
-        status = "Dormant"
+        status = "⚫ Dormant"
 
     return JsonResponse({
-        "login_count": stats["login_count"],
-        "last_login": stats["last_login"],
+        "login_count": login_count,
+        "last_login": last_login,
         "status": status
     })
