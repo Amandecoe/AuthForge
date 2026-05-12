@@ -4,6 +4,8 @@ from django.views.generic import ListView, DetailView
 from django.contrib.auth import get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import UserProfile
+from django.contrib.auth.decorators import login_required
+from django.http import JsonResponse
 # Create your views here.
 User = get_user_model()
 class HomePageView(TemplateView):
@@ -24,3 +26,15 @@ class ProfilePageView(LoginRequiredMixin, DetailView):
 
     def get_object(self):
         return self.request
+
+@login_required
+def profile_data(request):
+    profile = request.user.UserProfile #access the UserProfile data of the user that requested the data through the one to one relationship UserProfile has with user
+
+    data = {
+        "Username" : request.user.username,
+        "Email": request.user.email,
+        "bio": profile.bio,
+    }
+
+    return JsonResponse(data);
