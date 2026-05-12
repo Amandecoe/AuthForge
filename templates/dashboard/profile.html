@@ -9,7 +9,18 @@
     <div id="main-display">
     <script>
         function loadProfile(){
+            fetch("dashboard/api/profile")
+            .then(data=> {
+                let container = document.getElementById("main-display");
+                container.innerHTML = `
+                <h2>${data.profile_picture}</h2>
+                <h2>${data.username}</h2>
+                <p>${data.email}</p>
+                <p>${data.bio}</p>
+                `
+            })
         }
+        loadProfile();
     </script>
     </div>
     <div id = "Account-Stats">
