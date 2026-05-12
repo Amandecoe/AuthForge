@@ -64,7 +64,7 @@ def account_status(request):
         status = "Never Logged In"
     elif now - last_login <= timedelta(days=3):
         status = "🟢 Active"
-    elif now - last_login <= timedelta(days = 7):
+    elif now - last_login <= timedelta(days = 30):
         status = "🔴 Inactive"
     else:
         status = "⚫ Dormant"
