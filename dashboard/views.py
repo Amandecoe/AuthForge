@@ -82,7 +82,7 @@ def recent_activity(request):
     for activity in activities:
         data.append({
             "action":activity.action,
-            "time": activity.timestamp.strftime("%H:%M:%S"),
+            "time": activity.timestamp.isoformat(),
             "user": activity.user.username,
         })
     return JsonResponse ({"activities":data})

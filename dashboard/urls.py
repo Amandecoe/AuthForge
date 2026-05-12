@@ -9,5 +9,5 @@ urlpatterns = [
     path ("profile/", ProfilePageView.as_view(), name = "profile"),
     path("profile/password_change/", PasswordChangeView.as_view(), name = "password_change"),
     path("api/profile_activity/", account_status, name = "profile_data"),
-    path("api/recent_activity/", recent_activity, name = "recent_activity"),
+    path("api/recent_activity/", recent_activity, name = "recent_activity")
 ]
