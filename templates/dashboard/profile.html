@@ -8,20 +8,27 @@
 
     <div id="main-display">
     <script>
-        function loadProfile(){
-            fetch("dashboard/api/profile")
-            .then(data=> {
+    document.addEventListener("DOMContentLoaded", function () {
+
+    function loadProfile() {
+        fetch("/api/profile/")
+            .then(res => res.json())  //changes it to json
+            .then(data => {
+
                 let container = document.getElementById("main-display");
+
                 container.innerHTML = `
-                <h2>${data.profile_picture}</h2>
-                <h2>${data.username}</h2>
-                <p>${data.email}</p>
-                <p>${data.bio}</p>
-                `
+                    <h2>${data.username}</h2>
+                    <p>${data.email}</p>
+                    <p>${data.bio}</p>
+                `;
             })
-        }
-        loadProfile();
-    </script>
+            .catch(err => console.error("Fetch error:", err));
+    }
+
+    loadProfile();
+});
+</script>
     </div>
     <div id = "Account-Stats">
 
