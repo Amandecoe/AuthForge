@@ -277,15 +277,17 @@ body{
 }
 #top-title{
     padding:30px;
+
 }
 #top-title p{
     font-weight: 100;
 }
 #profile-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding:20px;
-    margin:30px;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+    padding:10px;
+    margin:10px;
     gap: 25px;
 }
 #main-display{
@@ -299,7 +301,7 @@ body{
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
     border-radius: 15px;
 }
@@ -307,7 +309,7 @@ body{
     background-color: #121215;
     display:grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
     border-radius: 15px;
 }
