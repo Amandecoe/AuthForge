@@ -18,9 +18,9 @@
                 let container = document.getElementById("main-display");
 
                 container.innerHTML = `
-                    <h2>${data.username}</h2>
-                    <p>${data.email}</p>
-                    <p>${data.bio}</p>
+                    <h2>${data.Username}</h2>
+                    <p>Email:${data.Email}</p>
+                    <p>Bio:${data.bio}</p>
                 `;
             })
             .catch(err => console.error("Fetch error:", err));
