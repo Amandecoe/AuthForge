@@ -8,5 +8,5 @@ urlpatterns = [
     path("api/profile/", profile_data, name = "profile_data"),
     path ("profile/", ProfilePageView.as_view(), name = "profile"),
     path("profile/password_change/", PasswordChangeView.as_view(), name = "password_change"),
-    path("api/profile_activity/", profile_data, name = "profile_data")
+    path("api/profile_activity/", account_status, name = "profile_data")
 ]

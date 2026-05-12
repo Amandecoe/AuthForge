@@ -30,7 +30,7 @@
     <script>
     document.addEventListener("DOMContentLoaded", function(){
         function loadactivity(){
-            fetch("api/profile_status/")
+            fetch("api/profile_activity/")
             .then(res => res.json())
             .then(data => {
                 let container = document.getElementById("Account-Stats");
@@ -49,7 +49,7 @@
     })
     </script>
     </div>
-    
+
     <div id = "Personal-Information">
 
     <script>
