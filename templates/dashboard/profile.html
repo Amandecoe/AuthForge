@@ -14,9 +14,7 @@
         fetch("/api/profile/")
             .then(res => res.json())  //changes it to json
             .then(data => {
-
                 let container = document.getElementById("main-display");
-
                 container.innerHTML = `
                     <h2>${data.Username}</h2>
                     <p>Email:${data.Email}</p>
@@ -30,7 +28,9 @@
 </script>
     </div>
     <div id = "Account-Stats">
-
+    <script>
+        
+    </script>
     </div>
     <div id = "Personal-Information">
 
