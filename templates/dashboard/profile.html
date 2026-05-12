@@ -26,15 +26,15 @@
 });
 </script>
     </div>
-    <div id = "Account-Stats">
+    <div id = "Account_Stats">
     </div>
     <script>
     document.addEventListener("DOMContentLoaded", function(){
         function loadactivity(){
-            fetch("api/profile_activity/")
+            fetch("/api/profile_activity/")
             .then(res => res.json())
             .then(data => {
-                let container = document.getElementById("Account-Stats");
+                let container = document.getElementById("Account_Stats");
                 container.innerHTML = `
                 <h2>Account Stats</h2>
                 <h4> TOTAL LOGINS </h4>
@@ -51,7 +51,7 @@
     </script>
 
 
-    <div id = "Personal-Information">
+    <div id = "Personal_Information">
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -59,7 +59,7 @@
                 fetch("/api/profile/")
                 .then(res => res.json())
                 .then(data => {
-                    let container = document.getElementById("Personal-Information");
+                    let container = document.getElementById("Personal_Information");
                     container.innerHTML = `
                     <h2>Personal Information</h2>
                     <p> FULL NAME: ${data.FullName}</p>
