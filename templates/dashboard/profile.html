@@ -33,7 +33,20 @@
 
     </div>
     <div id = "Personal-Information">
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function loadPersonalInfo(){
+                fetch("/api/profile/")
+                .then(res => res.json())
+                .then(data => {
+                    let container = document.getElementById("Personal-Information");
+                    container.innerHTML = `
+                    
+                    `
+                })
+            }
+        })
+    </script>
     </div>
     <div id = "Security">
 
