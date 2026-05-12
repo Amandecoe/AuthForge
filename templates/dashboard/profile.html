@@ -33,6 +33,7 @@
 
     </div>
     <div id = "Personal-Information">
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             function loadPersonalInfo(){
@@ -41,10 +42,16 @@
                 .then(data => {
                     let container = document.getElementById("Personal-Information");
                     container.innerHTML = `
-                    
-                    `
+                    <h2>Personal Information</h2>
+                    <p> FULL NAME: ${data.FullName}</p>
+                    <p> PHONE NUMBER : ${data.Phone_Number}</p>
+                    <p> EMAIL ADDRESS : ${data.Email} </p>
+                    <p> LAST LOGIN : ${data.Last_Login}</p>
+                    `;
                 })
+                .catch(err=> console.error("Fetch error:", err))
             }
+            loadPersonalInfo();
         })
     </script>
     </div>
