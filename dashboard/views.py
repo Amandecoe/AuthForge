@@ -29,7 +29,7 @@ class ProfilePageView(LoginRequiredMixin, DetailView):
 
 @login_required
 def profile_data(request):
-    profile = request.user.UserProfile #access the UserProfile data of the user that requested the data through the one to one relationship UserProfile has with user
+    profile = request.user.userprofile #access the UserProfile data of the user that requested the data through the one to one relationship UserProfile has with user
 
     data = {
         "Username" : request.user.username,
