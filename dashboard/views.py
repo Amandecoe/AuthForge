@@ -74,3 +74,15 @@ def account_status(request):
         "last_login": last_login,
         "status": status
     })
+
+@login_required
+def recent_activity(request):
+    activities = AccountsActivity.objects.filter(user=request.user).order_by('-timestamp')[:4]
+    data = []
+    for activity in activities:
+        data.append({
+            "action":activity.action,
+            "time": activity.timestamp.strftime("%H:%M:%S"),
+            "user": activity.user.username,
+        })
+    return JsonResponse ({"activities":data})

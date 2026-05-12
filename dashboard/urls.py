@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import HomePageView, UserPageView, ProfilePageView, profile_data,PasswordChangeView, account_status
+from .views import HomePageView, UserPageView, ProfilePageView, profile_data,PasswordChangeView, account_status, recent_activity
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
@@ -8,5 +8,6 @@ urlpatterns = [
     path("api/profile/", profile_data, name = "profile_data"),
     path ("profile/", ProfilePageView.as_view(), name = "profile"),
     path("profile/password_change/", PasswordChangeView.as_view(), name = "password_change"),
-    path("api/profile_activity/", account_status, name = "profile_data")
+    path("api/profile_activity/", account_status, name = "profile_data"),
+    path("api/recent_activity/", recent_activity, name = "recent_activity"),
 ]
