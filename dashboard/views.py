@@ -38,4 +38,4 @@ def profile_data(request):
         "Profile_Picture":profile.profile_picture,
     }
 
-    return JsonResponse(data);
+    return JsonResponse(data)
