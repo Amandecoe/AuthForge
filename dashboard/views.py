@@ -35,6 +35,9 @@ def profile_data(request):
         "Username" : request.user.username,
         "Email": request.user.email,
         "bio": profile.bio,
+        "FullName": request.user.full_name,
+        "Phone_Number": profile.phone_number,
+        "Last_Login": request.user.last_login,
     }
 
     return JsonResponse(data)
