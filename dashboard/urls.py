@@ -1,10 +1,11 @@
 from django.urls import path
-from .views import HomePageView, UserPageView, ProfilePageView, profile_data
+from .views import HomePageView, UserPageView, ProfilePageView, profile_data,PasswordChangeView
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path("home/",HomePageView.as_view(), name = "home"),
     path("users/",UserPageView.as_view(), name = "users"),
     path("api/profile/", profile_data, name = "profile_data"),
-    path ("profile/", ProfilePageView.as_view(), name = "profile")
+    path ("profile/", ProfilePageView.as_view(), name = "profile"),
+    path("profile/password_change/", PasswordChangeView.as_view(), name = "password_change")
 ]
