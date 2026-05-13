@@ -313,8 +313,6 @@ body{
 }
 #Personal_Information{
     background-color: #121215;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
     gap: 10px;
     padding: 20px;
     border-radius: 15px;
