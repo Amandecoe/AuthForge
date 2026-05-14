@@ -330,5 +330,9 @@ body{
 }
 #Recent-activ{
     background-color: #121215;
-    width:100%;
+    /* width:100%; */
+    padding:20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
 }
