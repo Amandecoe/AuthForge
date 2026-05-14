@@ -336,4 +336,8 @@ body{
     margin-right: 20px;
     border-radius: 15px;
     border: 0.5px solid #e3e3e337;
+    svg{
+    border-radius: 20px;
+    padding:5px;
+}
 }
